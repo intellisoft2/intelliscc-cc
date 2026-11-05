@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IntelliSCC™ — Contact Center Command | Intellisoft Technologies</title>
+<meta name="description" content="IntelliSCC™ by Intellisoft Technologies: AI-assisted, policy-grounded contact center operations for public-sector and enterprise service teams.">
+<meta name="theme-color" content="#070e1b">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; frame-src https://script.google.com https://*.googleusercontent.com; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:title" content="IntelliSCC™ — Contact Center Command">
+<meta property="og:description" content="Agent workspace, supervisor command center, quality and audit — start a 30-day pilot.">
+<meta property="og:url" content="https://cc.intellisoft-tech.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://script.google.com">
+<link rel="preconnect" href="https://script.googleusercontent.com">
+<style>
+html,body{margin:0;height:100%;background:#070e1b;overflow:hidden}
+#app{position:fixed;inset:0;width:100%;height:100%;border:0;display:block;opacity:0;transition:opacity .35s}
+#app.ready{opacity:1}
+#splash{position:fixed;inset:0;display:grid;place-content:center;justify-items:center;gap:14px;color:#97abc4;font:15px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;transition:opacity .35s}
+#splash.hide{opacity:0;pointer-events:none}
+.logo{width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,#4fe0d4,#86a2ff);display:grid;place-items:center;color:#06131f;font-weight:800;font-size:18px}
+.name{color:#eef5ff;font-weight:800;font-size:20px;letter-spacing:-.4px}.name b{color:#4fe0d4}
+.bar{width:160px;height:3px;border-radius:3px;background:#1b2b42;overflow:hidden}
+.bar i{display:block;width:40%;height:100%;background:linear-gradient(90deg,#4fe0d4,#86a2ff);animation:s 1.1s ease-in-out infinite}
+@keyframes s{0%{transform:translateX(-100%)}100%{transform:translateX(260%)}}
+#slow{display:none;max-width:420px;text-align:center;font-size:13px}
+#slow a{color:#4fe0d4}
+@media (prefers-reduced-motion:reduce){.bar i{animation:none;width:100%}#app,#splash{transition:none}}
+</style>
+</head>
+<body>
+<div id="splash" role="status" aria-live="polite">
+  <div class="logo" aria-hidden="true">SC</div>
+  <div class="name">Intelli<b>SCC</b>™</div>
+  <div class="bar" aria-hidden="true"><i></i></div>
+  <div>Loading your workspace…</div>
+  <div id="slow">This is taking longer than usual. Check your connection and <a href="/">reload</a>, or contact <a href="mailto:sales@intellisoft-tech.com">sales@intellisoft-tech.com</a>.</div>
+</div>
+<iframe id="app" title="IntelliSCC™ application" src="https://script.google.com/macros/s/AKfycbziduVsn_orY9Hnjc1WQqU8GCVXYMViWkM1qDXEHBUEMtmCEa5gHZ3uvqzHnhLKv1Nxmg/exec" allow="clipboard-write; fullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<noscript><p style="color:#eef5ff;font-family:Arial;padding:24px">IntelliSCC™ requires JavaScript. Please enable it and reload.</p></noscript>
+<script>
+(function(){
+  var f=document.getElementById('app'),s=document.getElementById('splash');
+  var t=setTimeout(function(){document.getElementById('slow').style.display='block'},20000);
+  f.addEventListener('load',function(){clearTimeout(t);f.className='ready';s.className='hide';setTimeout(function(){s.style.display='none'},400);f.focus()});
+})();
+</script>
+</body>
+</html>
